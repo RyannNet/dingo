@@ -1,6 +1,6 @@
 const embed = new MessageEmbed()
     .setTitle('Dingo Dowload')
-    .setURL('https://dingo.vercel.app')
+    .setURL('https://dingo-sooty.vercel.app/')
     .setDescription('Site oficial do dowload do Aplicativo Dingo!')
     .setImage('dingologo.png')
     .setFooter('Compartilhe seus momentos');
