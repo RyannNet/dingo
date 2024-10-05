@@ -1,0 +1,33 @@
+body {
+  background-image: url("dingo.png"); /* Substitua "sua-imagem.jpg" pelo nome do arquivo da sua imagem */
+  background-size: auto; /* Define como a imagem será dimensionada para caber no fundo */
+  background-repeat: no-repeat; /* Define se a imagem será repetida ou não */
+  background-position: center; /* Define a posição da imagem no fundo */
+  background-color: #0c0e1a;
+  color: #ffffff;
+  font-family: Jost, Sans-Serif;
+  bottom: -600;
+ 
+}
+button {
+  background: linear-gradient(90deg, #3e00cd); 
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 90px;
+  transition: 0.7s;
+font-family: Jost, Sans-Serif}
+button:hover{
+  background-color: #4800e9;
+  border: none;
+  border-radius: 15px;
+  height: 40px;
+  width: 120px;
+  transition: linear-gradient:0.7s;
+  font-family: Outfit, Sans-Serif;
+  color: #dbcbff;
+}
+
+hr{
+  background-color: #7d42ff;
+}

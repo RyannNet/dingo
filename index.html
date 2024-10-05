@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <title>Dingo</title>
+  <link rel="stylesheet" href="slka.css">
+</head>
+<body>
+  <img src="logodingo.png" width="120" height="120">
+<div class="molde">
+<h1>Dingo &#128540;</h1>
+
+<p>O Dingo é uma nova forma de ficar conectado com noticias entre outros, sem desastres. caso apareça noticias de desastres denuncie, queremos um ambiente limpo e seguro a todas as idades.</p>
+</div>
+
+<h1>E os Anúncios?</h1>
+<p>Não se precupe com isso o Dingo não prexisa de anúncio, oferemos uma experiência única a nossos usuários sem anúncios irritantes.</p>
+<hr>
+<html>
+<head>
+</head>
+<body>
+  <h1>Baixar Dados</h1>
+  <button id="downloadButton">Baixar</button>
+
+  <script>
+    const downloadButton = document.getElementById('downloadButton');
+
+    downloadButton.addEventListener('click', () => {
+      // 1. Faz uma requisição para o servidor (usando fetch ou XMLHttpRequest)
+      fetch('Dingo.apk') // Substitua '/download' pelo endpoint da sua API
+        .then(response => {
+          // 2. Verifica se a resposta do servidor foi bem-sucedida
+          if (!response.ok) {
+            throw new Error('Desculpe, ocorreu um erro ao tentar abaixar seu aplicativo');
+          }
+          return response.blob(); // Obtém os dados como um blob
+        })
+        .then(blob => {
+          // 3. Cria um link para download
+          const url = window.URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = url;
+          link.download = 'DingoAppDowloadOfficial'; // Define o nome do arquivo
+          link.click(); // Clica no link para iniciar o download
+        })
+        .catch(error => {
+          // 4. Trata erros
+          console.error('Erro:', error);
+          alert('Erro ao baixar dados. Tente novamente mais tarde.');
+        });
+    });
+  </script>
+</body>
+</html>
+
+</body>
+</html>
